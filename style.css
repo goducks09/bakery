@@ -1,0 +1,25 @@
+/* Base Styles */
+
+body {
+  background-color: black;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Home Page */
+
+#page1 {
+  align-items: center;
+  background: url('resources/images/bakery-interior.png') center/cover;
+  height: 100vh;
+  justify-content: center;
+  opacity: .3;
+  width: 100%;
+}

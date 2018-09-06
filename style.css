@@ -30,6 +30,13 @@ nav ul {
   justify-content: flex-end;
 }
 
+.nav-icon:hover ~ ul,
+.nav-icon:focus ~ ul {
+  color: red;
+  transition: color 5s linear;
+  visibility: visible;
+}
+
 .flex {
   display: flex;
 }

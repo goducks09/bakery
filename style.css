@@ -18,6 +18,18 @@ a {
   text-decoration: none;
 }
 
+nav {
+  position: fixed;
+  text-align: right;
+  top: 0;
+  width: 100%;
+}
+
+nav ul {
+  visibility: collapse;
+  justify-content: flex-end;
+}
+
 .flex {
   display: flex;
 }
@@ -26,9 +38,12 @@ a {
 
 #page1 {
   align-items: center;
-  background: url('resources/images/bakery-interior.png') center/cover, rgba(0, 0, 0, .4);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('resources/images/bakery-interior.png') center/cover;
   height: 100vh;
   justify-content: center;
+  text-align: center;
   width: 100%;
 }
 
@@ -51,9 +66,23 @@ a {
   width: 200px;
 }
 
-/* About Us Page*/
+/* About Us Page */
 
 #page3 {
-  background: url('resources/images/bakery-exterior.jpg') center/cover;
-  opacity: .4;
+  align-items: center;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('resources/images/bakery-exterior.jpg') top left/cover;
+  flex-flow: column nowrap;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+/* Contact Page */
+
+#page4 {
+  text-align: center;
+  padding-bottom: 25px;
 }

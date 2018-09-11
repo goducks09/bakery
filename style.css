@@ -26,7 +26,8 @@ nav {
   position: fixed;
   text-align: right;
   top: 0;
-  width: 100%;
+  width: 100%; /* Fix width so hover area does not overlap hover area of menu items */
+  z-index: 100;
 }
 
 /* Hidden navigation menu */
@@ -50,9 +51,10 @@ nav ul li {
 }
 
 /* Display hidden navigation menu on hover */
+
+nav ul:hover,
 .nav-icon:hover ~ ul,
-.nav-icon:focus ~ ul,
-nav ul:hover {
+.nav-icon:focus ~ ul {
   visibility: visible;
   opacity: 1;
   transition: all 2s linear;
@@ -69,10 +71,15 @@ nav ul:hover {
   background:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url('resources/images/bakery-interior.png') center/cover;
+  flex-flow: column;
   height: 100vh;
   justify-content: center;
   text-align: center;
   width: 100%;
+}
+
+#page1 img {
+  margin-top: 75px;
 }
 
 /* Menu Page */
@@ -80,24 +87,37 @@ nav ul:hover {
 .menu-item {
   align-items: center;
   flex-flow: column nowrap;
+  margin: 15px 0;
   position: relative;
   text-align: center;
 }
 
-.menu-item :not(img) {
+.menu-item span,
+.menu-item p {
   background-color: black;
-  bottom: 0;
   left: 0;
+  margin: 0;
   opacity: 0;
+  padding: 5px;
   position: absolute;
   right: 0;
-  top: 0;
   transition: all 1s;
   visibility: collapse;
 }
 
-.menu-item:hover :not(img){
-  opacity: .6;
+.menu-item span {
+  bottom: 67%;
+  top: 0;
+}
+
+.menu-item p {
+  bottom: 0;
+  top: 33%;
+}
+
+.menu-item:hover :not(img),
+.menu-item:focus :not(img) {
+  opacity: 0.6;
   visibility: visible;
 }
 
@@ -108,8 +128,8 @@ nav ul:hover {
 }
 
 #page2 img {
-  height: auto;
-  width: 200px;
+  height: 137px;
+  width: 215px;
 }
 
 /* About Us Page */

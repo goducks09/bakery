@@ -22,11 +22,12 @@ a {
 nav {
   align-items: flex-end;
   flex-flow: column nowrap;
+  height: 50px;
   padding: 25px;
   position: fixed;
   text-align: right;
   top: 0;
-  width: 100%; /* Fix width so hover area does not overlap hover area of menu items */
+  width: 100%;
   z-index: 100;
 }
 
@@ -55,9 +56,10 @@ nav ul li {
 nav ul:hover,
 .nav-icon:hover ~ ul,
 .nav-icon:focus ~ ul {
-  visibility: visible;
+  height: auto;
   opacity: 1;
   transition: all 2s linear;
+  visibility: visible;
 }
 
 .flex {
@@ -151,4 +153,18 @@ nav ul:hover,
 #page4 {
   text-align: center;
   padding-bottom: 25px;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 720px) {
+  #page2 {
+    flex-flow: row wrap;
+    justify-content: space-between;;
+  }
+
+  #page2 h2 {
+    text-align: center;
+    width: 100%;
+  }
 }

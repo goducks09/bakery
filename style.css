@@ -1,4 +1,7 @@
 /* Base Styles */
+html {
+  font-size: 16px;
+}
 
 body {
   background-color: black;
@@ -151,8 +154,13 @@ nav ul:hover,
 /* Contact Page */
 
 #page4 {
-  text-align: center;
+  flex-flow: column;
   padding-bottom: 25px;
+  text-align: center;
+}
+
+#page4 img {
+  display: none;
 }
 
 /* Media Queries */
@@ -163,8 +171,25 @@ nav ul:hover,
     justify-content: space-between;;
   }
 
-  #page2 h2 {
+  #page2 h2,
+  #page4 h2 {
     text-align: center;
     width: 100%;
+  }
+
+  #page4 {
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-around; 
+  }
+
+  #page4 address {
+    text-align: left;
+  }
+
+  #page4 img {
+    display: block;
+    height: auto;
+    width: 250px;
   }
 }

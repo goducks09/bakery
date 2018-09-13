@@ -140,7 +140,6 @@ nav ul:hover,
 /* About Us Page */
 
 #page3 {
-  align-items: center;
   background:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url('resources/images/bakery-exterior.jpg') top left/cover;
@@ -149,6 +148,11 @@ nav ul:hover,
   justify-content: center;
   text-align: center;
   width: 100%;
+}
+
+#page3 h3,
+#page3 p {
+  margin: 1rem;
 }
 
 /* Contact Page */
@@ -166,9 +170,10 @@ nav ul:hover,
 /* Media Queries */
 
 @media only screen and (min-width: 720px) {
+  /* Menu Section */
   #page2 {
     flex-flow: row wrap;
-    justify-content: space-between;;
+    justify-content: space-between;
   }
 
   #page2 h2,
@@ -177,10 +182,11 @@ nav ul:hover,
     width: 100%;
   }
 
+  /* Contact Section */
   #page4 {
     align-items: center;
     flex-flow: row wrap;
-    justify-content: space-around; 
+    justify-content: space-around;
   }
 
   #page4 address {
@@ -190,6 +196,34 @@ nav ul:hover,
   #page4 img {
     display: block;
     height: auto;
-    width: 250px;
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* Menu Section */
+  .menu-item,
+  .menu-item span,
+  .menu-item p {
+    opacity: initial;
+    pointer-events: none;
+    position: initial;
+    visibility: initial;
+  }
+
+  .menu-item {
+    margin: 15px;
+    width: 215px;
+  }
+
+  #page2 {
+    justify-content: center;
+    margin: 5% 10%;
+    padding: 0;
+  }
+
+  /* Contact Section */
+  #page4 img {
+    width: 400px;
   }
 }

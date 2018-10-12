@@ -32,12 +32,11 @@ nav {
   align-items: flex-end;
   animation: navDisplay 10s linear 1;
   flex-flow: column nowrap;
-  height: 50px;
   padding: 15px;
   position: fixed;
+  right: 0;
   text-align: right;
   top: 0;
-  width: 100%;
   z-index: 100;
 }
 

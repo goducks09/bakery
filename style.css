@@ -195,6 +195,14 @@ nav ul:hover,
   width: 215px;
 }
 
+/* Photos Section
+Create container for the imgs and then set display on the container rather than the image
+*/
+#photos img {
+  display: inline;
+  height: 215px;
+  width: 250px;
+}
 /* About Us Page */
 
 #page3 {

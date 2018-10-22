@@ -197,10 +197,12 @@ nav ul:hover,
 
 /* Photos Section */
 .carousel-image {
+  animation: imageCarousel 18s linear infinite;
   display: inline-block;
-  left: 0;
+  transform: translateX(-300%);
+  /*left: 0;
   position: absolute;
-  top: 0;
+  top: 0;*/
 }
 
 .carousel-wrapper {

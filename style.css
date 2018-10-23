@@ -199,10 +199,31 @@ nav ul:hover,
 .carousel-image {
   animation: imageCarousel 18s linear infinite;
   display: inline-block;
-  transform: translateX(-300%);
   /*left: 0;
   position: absolute;
   top: 0;*/
+}
+
+@keyframes imageCarousel {
+  0%, 100% {transform:translateX(0);}
+  7% {transform:translateX(0%);}
+  11% {transform:translateX(-100%);}
+  18% {transform:translateX(-100%);}
+  22% {transform:translateX(-200%);}
+  29% {transform:translateX(-200%);}
+  33% {transform:translateX(-300%);}
+  40% {transform:translateX(-300%);}
+  44% {transform:translateX(-400%);}
+  51% {transform:translateX(-400%);}
+  55% {transform:translateX(-500%);}
+  62% {transform:translateX(-500%);}
+  66% {transform:translateX(-600%);}
+  73% {transform:translateX(-600%);}
+  77% {transform:translateX(-700%);}
+  84% {transform:translateX(-700%);}
+  88% {transform:translateX(-800%);}
+  95% {transform:translateX(-800%);}
+  97% {transform:translateX(-900%);}
 }
 
 .carousel-wrapper {

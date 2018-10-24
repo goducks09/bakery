@@ -4,8 +4,8 @@ html {
 }
 
 body {
-  background-color: #D59FA0;
-  color: #E2E4E5;
+  background-color: #D5E2EB;
+  color: #3F4A60;
 }
 
 h1 {
@@ -23,8 +23,13 @@ h2 {
 }
 
 a {
-  color: inherit;
+  color: white;
   text-decoration: none;
+}
+
+h1,
+#page3 {
+  color: white;
 }
 
 /* Fixed navigation */
@@ -49,7 +54,8 @@ nav {
 /* Hidden navigation menu */
 nav ul {
   align-items: center;
-  background-color: black;
+  background-color: #3F4A60;
+  border-radius: 8px;
   display: inline-block;
   flex-flow: column nowrap;
   margin: 0;
@@ -80,7 +86,7 @@ nav ul:hover,
 /* Home Page */
 
 .bg-slideshow::after {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   content: '';
   height: 100%;
   left: 0;
@@ -157,6 +163,8 @@ nav ul:hover,
 
 .menu-item span,
 .menu-item p {
+  background-color: black;
+  color: white;
   left: 0;
   margin: 0;
   opacity: 0;
@@ -250,7 +258,7 @@ nav ul:hover,
 
 #page3 {
   background:
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('resources/images/bakery-exterior.jpg') top left/cover;
   flex-flow: column nowrap;
   height: 100vh;

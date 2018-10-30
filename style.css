@@ -28,7 +28,7 @@ a {
 }
 
 h1,
-#page3 {
+#about-page {
   color: white;
 }
 
@@ -134,7 +134,7 @@ nav ul li:hover a {
   100% { opacity: 0; }
 }
 
-#page1 {
+#landing-page {
   align-items: center;
   flex-flow: column;
   height: 100vh;
@@ -209,13 +209,13 @@ nav ul li:hover a {
   visibility: visible;
 }
 
-#page2 {
+#menu-page {
   align-items: center;
   flex-flow: column nowrap;
   padding: 0 16%;
 }
 
-#page2 img {
+#menu-page img {
   border-radius: 14px;
   height: 137px;
   width: 215px;
@@ -256,12 +256,12 @@ nav ul li:hover a {
   97% {transform:translateX(-900%);}
 }
 
-#photos {
+#photos-page {
   padding: 5% 10%;
   text-align: center;
 }
 
-#photos img {
+#photos-page img {
   border-radius: 14px;
   height: 215px;
   width: 250px;
@@ -269,7 +269,7 @@ nav ul li:hover a {
 
 /* About Us Page */
 
-#page3 {
+#about-page {
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('resources/images/bakery-exterior.jpg') top left/cover;
@@ -280,20 +280,20 @@ nav ul li:hover a {
   width: 100%;
 }
 
-#page3 h3,
-#page3 p {
+#about-page h3,
+#about-page p {
   margin: 5%;
 }
 
 /* Contact Page */
 
-#page4 {
+#contact-page {
   flex-flow: column;
   padding-bottom: 25px;
   text-align: center;
 }
 
-#page4 iframe {
+#contact-page iframe {
   display: none;
 }
 
@@ -315,29 +315,29 @@ footer a:nth-child(2) {
 
 @media only screen and (min-width: 720px) {
   /* Menu Section */
-  #page2 {
+  #menu-page {
     flex-flow: row wrap;
     justify-content: space-between;
   }
 
-  #page2 h2,
-  #page4 h2 {
+  #menu-page h2,
+  #contact-page h2 {
     text-align: center;
     width: 100%;
   }
 
   /* Contact Section */
-  #page4 {
+  #contact-page {
     align-items: center;
     flex-flow: row wrap;
     justify-content: space-around;
   }
 
-  #page4 address {
+  #contact-page address {
     text-align: left;
   }
 
-  #page4 iframe {
+  #contact-page iframe {
     display: block;
     height: 300px;
     width: 300px;
@@ -365,24 +365,24 @@ footer a:nth-child(2) {
     border-bottom: 1px solid;
   }
 
-  #page2 {
+  #menu-page {
     justify-content: center;
     margin: 5% 10%;
     padding: 0;
   }
 
-  #page2 img {
+  #menu-page img {
     border-radius: 14px 14px 0 0;
   }
 
   /* About Us Page */
-  #page3 h3,
-  #page3 p {
+  #about-page h3,
+  #about-page p {
     margin: 1% 10%;
   }
 
   /* Contact Page */
-  #page4 iframe {
+  #contact-page iframe {
     height: 400px;
     width: 400px;
   }

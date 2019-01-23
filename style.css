@@ -236,7 +236,7 @@ nav ul li:hover a {
 }
 
 .carousel-image {
-  animation: imageCarousel 18s linear infinite;
+  animation: imageCarousel 24s linear infinite;
   display: inline-block;
   /*left: 0;
   position: absolute;
@@ -245,15 +245,15 @@ nav ul li:hover a {
 
 @keyframes imageCarousel {
   0%, 7%, 100% {transform:translateX(0);}
-  11%, 18% {transform:translateX(-100%);}
-  22%, 29% {transform:translateX(-200%);}
-  33%, 40% {transform:translateX(-300%);}
-  44%, 51% {transform:translateX(-400%);}
-  55%, 62% {transform:translateX(-500%);}
-  66%, 73% {transform:translateX(-600%);}
-  77%, 84% {transform:translateX(-700%);}
-  88%, 95% {transform:translateX(-800%);}
-  97% {transform:translateX(-900%);}
+  10%, 17% {transform:translateX(-100%);}
+  20%, 27% {transform:translateX(-200%);}
+  30%, 37% {transform:translateX(-300%);}
+  40%, 47% {transform:translateX(-400%);}
+  50%, 57% {transform:translateX(-500%);}
+  60%, 67% {transform:translateX(-600%);}
+  70%, 77% {transform:translateX(-700%);}
+  80%, 87% {transform:translateX(-800%);}
+  90%, 97% {transform:translateX(-900%);}
 }
 
 #photos-page {
@@ -374,6 +374,27 @@ footer a:nth-child(2) {
   #menu-page img {
     border-radius: 14px 14px 0 0;
   }
+  
+  /* Photo Page */
+  .carousel-wrapper {
+    width: 498px;
+  }
+  
+  #photos-page img {
+    margin: 5px;
+  }
+  
+  @keyframes imageCarousel {
+    0%, 7%, 100% {transform:translateX(0);}
+    11%, 18% {transform:translateX(-100%);}
+    22%, 29% {transform:translateX(-200%);}
+    33%, 40% {transform:translateX(-300%);}
+    44%, 51% {transform:translateX(-400%);}
+    55%, 62% {transform:translateX(-500%);}
+    66%, 73% {transform:translateX(-600%);}
+    77%, 84% {transform:translateX(-700%);}
+    88%, 95% {transform:translateX(-800%);}
+  }
 
   /* About Us Page */
   #about-page h3,
@@ -385,5 +406,23 @@ footer a:nth-child(2) {
   #contact-page iframe {
     height: 400px;
     width: 400px;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  /* Photo Page */
+  .carousel-wrapper {
+    width: 747px;
+  }
+  
+  @keyframes imageCarousel {
+    0%, 8%, 100% {transform:translateX(0);}
+    13%, 20% {transform:translateX(-100%);}
+    25%, 32% {transform:translateX(-200%);}
+    37%, 44% {transform:translateX(-300%);}
+    49%, 56% {transform:translateX(-400%);}
+    61%, 68% {transform:translateX(-500%);}
+    73%, 80% {transform:translateX(-600%);}
+    85%, 92% {transform:translateX(-700%);}
   }
 }
